@@ -12,7 +12,7 @@ public class ApplicationProperties {
     public ApplicationProperties() {
         properties = new Properties();
         try {
-            properties.load(getClass().getClassLoader().getResourceAsStream("application.properties"));
+            properties.load(getClass().getClassLoader().getResourceAsStream("empresa.properties"));
 
         } catch (IOException ex) {
             System.err.println("IOException Ocurrido al leer el fichero de propiedades: " + ex.getMessage());
